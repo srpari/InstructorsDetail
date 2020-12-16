@@ -12,9 +12,11 @@ function App() {
           <div className='underline'></div>         
       </div>   
       <Instructor/>
-      {/* <Reviews/> */}
       </section>
       </main>
+      {/* <section className="reviews">
+        <Reviews/>
+      </section> */}
     </div>
   );
 }

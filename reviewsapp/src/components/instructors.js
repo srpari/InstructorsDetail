@@ -3,11 +3,30 @@ import {instructorsData} from './data';
 import {FaChevronLeft,FaChevronRight,FaQuoteRight} from 'react-icons/fa';
 
 const Instructors = () => {
-    const [index, setIndusIndex] = useState(0);
+    const [index, setInstrIndex] = useState(0);
     const { name, image, text } = instructorsData[index];
     const createTxtList = (text)=>{
         let tempTxtArr = text.split(",");
         return tempTxtArr;
+    };
+    const prevPerson = () => {
+     setInstrIndex((index)=>{
+      return checkNumber(index-1);
+     })
+    };
+    const nextPerson = () => {
+      setInstrIndex((index)=>{
+        return checkNumber(index+1);
+       })
+     };
+     const checkNumber = (number) => {
+      if (number > instructorsData.length - 1) {
+        return 0;
+      }
+      if (number < 0) {
+        return instructorsData.length - 1;
+      }
+      return number;
     };
     return ( 
       <div className="instr-container">
@@ -22,10 +41,10 @@ const Instructors = () => {
         {createTxtList(text).map(text=><li>{text}</li>)}    
         </p>
         <div className='button-container'>
-        <button className='prev-btn'>
+        <button className='prev-btn' onClick={prevPerson}>
           <FaChevronLeft />
         </button>
-        <button className='next-btn'>
+        <button className='next-btn' onClick={nextPerson}>
           <FaChevronRight />
         </button>
        </div>
