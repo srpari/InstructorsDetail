@@ -19,7 +19,7 @@ const Instructors = () => {
         return checkNumber(index+1);
        })
      };
-     const checkNumber = (number) => {
+    const checkNumber = (number) => {
       if (number > instructorsData.length - 1) {
         return 0;
       }
