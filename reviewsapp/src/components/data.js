@@ -31,7 +31,7 @@
         image:
         'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
         text:
-          '4+ years of experience in teaching,Graduate in psychology,Certified Rotract Trainer,Experienced in tutoring,Passion for craft making & decor design',
+          '4+ years of experience in teaching,Graduate in psychology,Certified Rotract Trainer,Puzzle designer & content developer,Experienced in tutoring,Passion for craft making & decor design',
       }, 
       {
         id: 5,
@@ -39,7 +39,7 @@
         image:
           'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
         text:
-          '10+ years of experience in education sector,Teacher & Content developerby profession,Highly skilled in realistic sketching,Experienced in handling kids',
+          '10+ years of experience in education sector,5+ years of experience in Drawing.Painting.Graphic designing & Calligraphy,Teacher & Content developerby profession,Highly skilled in realistic sketching,Experienced in handling kids',
       },
   ];
   
